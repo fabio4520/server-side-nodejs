@@ -14,7 +14,8 @@ var UserSchema = new Schema({
   admin: {
     type: Boolean,
     default: false
-  }
+  },
+  facebookId: String,
 });
 
 UserSchema.plugin(passportLocalMongoose);
