@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 module.exports = {
-  'secretKey': '12345-67890-09876-54321',
-  'mongoUrl': 'mongodb://localhost:27017/conFusion',
+  'secretKey': process.env.SECRET_KEY,
+  'mongoUrl': process.env.MONGO_URL,
   'facebook': {
-    clientId: '191954143275719',
-    clientSecret: '34f2d34e1ec2121edc01930579a93653'
+    clientId: process.env.FACEBOOK_CLIENT_ID,
+    clientSecret: process.env.FACEBOOK_CLIENT_SECRET
   }
 }
